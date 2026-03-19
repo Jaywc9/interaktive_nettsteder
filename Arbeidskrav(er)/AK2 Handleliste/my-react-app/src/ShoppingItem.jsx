@@ -1,8 +1,8 @@
-export default function ShoppingItem({ label, quantity }) {
+export default function ShoppingItem({label, quantity, defaultChecked}) {
   return (
-    <div>
-      <input type="checkbox" id={label} />
+    <section>
+      <input type="checkbox" id={label} defaultChecked={defaultChecked} />
       <label htmlFor={label}>{quantity}x {label}</label>
-    </div>
+    </section>
   )
 }

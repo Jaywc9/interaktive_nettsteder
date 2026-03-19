@@ -1,33 +1,31 @@
-import { useState } from 'react'
+import React, { useState } from 'react';
 
-export default function AddForm({ onAdd }) {
-  const [name, setName] = useState('')
-  const [quantity, setQuantity] = useState('')
-  const [error, setError] = useState('')
+export default function AddForm({onAdd}) {
+const [name, setName] = useState('')
+const [quantity, setQuantity] = useState('')
+const [error, setError] = useState('')
+function handleSubmit(e) {
+  e.preventDefault()
 
-  function handleSubmit(e) {
-    e.preventDefault()
-
-    if (!name && !quantity) {
-      setError('Du må fylle inn både navn og antall!')
-      return
-    }
-    if (!name) {
-      setError('Du må fylle inn et navn!')
-      return
-    }
-    if (!quantity) {
-      setError('Du må fylle inn et antall!')
-      return
-    }
-
-    onAdd({ name, quantity })
-    setName('')
-    setQuantity('')
-    setError('')
+  if (!name && !quantity) {
+    setError('Du må fylle inn både navn og antall!')
+    return
+  }
+  if (!name) {
+    setError('Du må fylle inn et navn!')
+    return
+  }
+  if (!quantity) {
+    setError('Du må fylle inn et antall!')
+    return
   }
 
-  return (
+  onAdd({ name, quantity })  // sender varen opp til App
+  setName('')                // tømmer feltene
+  setQuantity('')
+  setError('')               // fjerner feilmelding
+}
+return (
     <form onSubmit={handleSubmit}>
       <input
         type="text"

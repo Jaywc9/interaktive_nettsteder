@@ -28,3 +28,9 @@ https://dev.to/cesareferrari/how-to-add-a-new-item-to-a-list-in-react-14lj
 Kilde 3:
 https://stackoverflow.com/questions/62714981/react-adding-an-item-to-a-list-from-an-input-by-clicking-submit-button
 
+Kilde 4:
+https://lms.webtricks.blog/kurs/uin/react-states/usestate
+
+Kilde 5:
+https://claude.ai/share/f1835b65-3e98-46e8-b03f-f918327c386f
+
