@@ -14,3 +14,17 @@ The React Compiler is not enabled on this template because of its impact on dev 
 ## Expanding the ESLint configuration
 
 If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+
+## Kilder
+Arbeidet med Sander Monstad Gudim
+
+Kilde 1:
+https://stackoverflow.com/questions/62714981/react-adding-an-item-to-a-list-from-an-input-by-clicking-submit-button
+
+Kilde 2:
+https://dev.to/cesareferrari/how-to-add-a-new-item-to-a-list-in-react-14lj
+
+Kilde 3:
+https://stackoverflow.com/questions/62714981/react-adding-an-item-to-a-list-from-an-input-by-clicking-submit-button
+

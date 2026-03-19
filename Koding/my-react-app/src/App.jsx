@@ -1,36 +1,21 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import heroImg from './assets/hero.png'
-import './App.css'
+import AddForm from './AddForm'
+import ShoppingList from './ShoppingList'
 
 function App() {
+  const [items, setItems] = useState([])
+
+  function addItem(newItem) {
+    setItems([newItem, ...items])
+  }
+
   return (
-  <p>
-    <Produkt />
-  </p>
+    <main>
+      <h1>Handleliste ({items.length} varer)</h1>
+      <AddForm onAdd={addItem} />
+      <ShoppingList items={items} />
+    </main>
   )
 }
-
-
-
-function Produkt() {
- return (
-  <section>
-    <Checkbox label="Yoghurt"/>
-    <Checkbox label="Egg  "/>
-  </section>
- )
-}
-
-function Checkbox({label}) {
-  return (
-    <section>
-    <input type="checkbox" id={label} />
-    <label htmlFor={label}>{label}</label>
-    </section>
-  )
-}
-
 
 export default App
